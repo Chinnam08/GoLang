@@ -11,7 +11,7 @@ func Area(r Rectangle) int {
 	return r.length * r.width
 }
 
-func (r *Rectangle) Area() int {
+func (r Rectangle) Area() int {
 	return r.length * r.width
 }
 
