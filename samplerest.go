@@ -12,7 +12,6 @@ func main() {
 
 	route.HandleFunc("/", handler)
 	route.HandleFunc("/users", getUsers)
-	//db.GetDB()
 	fmt.Println("Starting the server")
 	http.ListenAndServe(":8080", route)
 }
@@ -24,5 +23,4 @@ func handler(resp http.ResponseWriter, req *http.Request) {
 
 func getUsers(resp http.ResponseWriter, req *http.Request) {
 	fmt.Println("Request Landed for Get users..!")
-	// TODO
 }
